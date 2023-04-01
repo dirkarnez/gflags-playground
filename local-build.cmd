@@ -8,7 +8,7 @@ SET PATH=^
 %DOWNLOADS_DIR%\PortableGit\bin;^
 %DOWNLOADS_DIR%\x86_64-8.1.0-release-posix-seh-rt_v6-rev0;^
 %DOWNLOADS_DIR%\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\bin;^
-%DOWNLOADS_DIR%\cmake-3.22.2-windows-x86_64\bin;
+%DOWNLOADS_DIR%\cmake-3.26.1-windows-x86_64\bin;
 
 @REM set PATH=^
 @REM D:\Softwares\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64;^
@@ -17,7 +17,7 @@ SET PATH=^
 
 cmake.exe -G"MinGW Makefiles" ^
 -DCMAKE_BUILD_TYPE=Debug ^
--Dportaudio_DIR="%DOWNLOADS_DIR_LINUX%/portaudio-v19.7.0-mingw64-x86_64-posix-seh-rev0-8.1.0/lib/cmake/portaudio" ^
+-Dgflags_DIR="%DOWNLOADS_DIR_LINUX%/gflags-v2.2.2-mingw64-x86_64-posix-seh-rev0-8.1.0/lib/cmake/gflags" ^
 -B./cmake-build &&^
 cd cmake-build &&^
 cmake --build . &&^
